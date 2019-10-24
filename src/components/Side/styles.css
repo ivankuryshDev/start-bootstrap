@@ -1,0 +1,21 @@
+.nav {
+  display: inline-block;
+  width: 100%;
+}
+
+.menu__item {
+  width: 100%;
+  font-size: 18px;
+  padding: 0px;
+}
+.item{
+  display: block;
+  padding: 8px 8px 8px 21px;
+  color: #707070;
+  text-decoration: none;
+}
+.item:hover{
+  background: #e9e8e8;
+  color: #707070;
+  text-decoration: none;
+}

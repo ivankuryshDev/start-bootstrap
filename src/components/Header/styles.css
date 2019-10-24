@@ -1,0 +1,13 @@
+.nav__heading {
+  font-size: 28px;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-weight: 700;
+
+}
+
+.navbar--bordered {
+  border-bottom-width: 1px;
+  border-bottom-color: #ddd;
+  border-bottom-style: solid;
+}
