@@ -18,7 +18,7 @@ class OneNews extends Component {
     let formData = new FormData();
     formData.append("id", this.props.location.state.id);
 
-    fetch("http://test55.phpist.com.ua/api/get_one_news", {
+    fetch("https://test55.phpist.com.ua/api/get_one_news", {
       method: "POST",
       body: formData
     })

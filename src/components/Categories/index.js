@@ -17,7 +17,7 @@ class Categories extends Component {
   }
 
   componentDidMount() {
-    fetch("http://test55.phpist.com.ua/api/get_categories")
+    fetch("https://test55.phpist.com.ua/api/get_categories")
       .then(res => res.json())
       .then(res => {
         this.setState({ data: res, loading: false });

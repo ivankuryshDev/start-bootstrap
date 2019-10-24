@@ -30,7 +30,7 @@ class News extends Component {
   }
 
   componentDidMount() {
-    fetch("http://test55.phpist.com.ua/api/get_news", {
+    fetch("https://test55.phpist.com.ua/api/get_news", {
       method: "POST"
     })
     .then(res => res.json())
@@ -56,7 +56,7 @@ class News extends Component {
     formData.append("description", modal.description);
 
     this.handleToggleModal();
-    fetch("http://test55.phpist.com.ua/api/save_news", {
+    fetch("https://test55.phpist.com.ua/api/save_news", {
       method: "POST",
       body: formData
     })
