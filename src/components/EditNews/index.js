@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import "./styles.css";
 
+const NO_PHOTO_IMG = "https://zenit.org/wp-content/uploads/2018/05/no-image-icon.png";
 
 class EditNews extends Component {
 
@@ -10,7 +11,13 @@ class EditNews extends Component {
     color: '#000'
   }
 
-
+  addDefaultSrc = (ev) => {
+    if(!this.props.img){
+      return ev.target.src = NO_PHOTO_IMG;
+    }else{
+      return ev.target.src = this.props.img;
+    }
+  }
 
   render() {
     let {
@@ -32,7 +39,12 @@ class EditNews extends Component {
           <Link style={this.titleStyle} to={{ pathname: "/onenews", state: { id: id } }}>{title}</Link>
         </td>
         <td>
-         
+          <img
+            src={!img ? this.src = NO_PHOTO_IMG : this.src = img}
+            alt="some"
+            height="42"
+            width="42"
+          />
         </td>
         <td>{publish_time}</td>
         <td style={{ minWidth: "35px" }}>{description}</td>
